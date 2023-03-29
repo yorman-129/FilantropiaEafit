@@ -39,17 +39,22 @@ module.exports = {
         ]
     },
     plugins: [
+
         new HtmlWebpackPlugin({
             template: './public/index.html',
             filename: './index.html'
         }),
+
         new miniCssExtractPlugim({
             filename: '[name].css'
         })
+
     ],
     devServer:{
+
         static: path.join(__dirname, 'dist'),
         compress:true,
         port:3005,
+        
     }
 }
