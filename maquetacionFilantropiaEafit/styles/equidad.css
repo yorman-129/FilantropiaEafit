@@ -1,0 +1,347 @@
+:root {
+    --color-nav: rgba(0, 0, 0, 0.897);
+    --color-primary: #00ACA0;
+    --color-secondary: #4746463d;
+    --just-white: #f1ebeb;
+  }
+  
+  * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+  }
+  
+  html{
+      font-family: 'Inter', sans-serif;
+  }
+  body {
+      background-color: var(--color-secondary);
+      
+  }
+  p,h1,h2,h3,h4,h5,h6,article{
+      font-family: 'Roboto Condensed', sans-serif;
+  }
+  header {
+      width: 100%;
+      min-width: 320px; /*dimension mas chicha en los celulares*/
+      height: 550px;
+      background-size: cover;
+      position: relative;
+      background: rgb(102,102,102);
+      background: linear-gradient(90deg, rgba(102,102,102,1) 3%, rgba(0,201,186,0.835171568627451) 51%,
+       rgba(0,172,160,1) 100%);
+      border-bottom-left-radius: 20px;
+      border-bottom-right-radius: 20px;
+  }
+  
+  .nav-container{
+      min-width: 320px;
+      height: 60px;
+  }
+  
+  .nav-container nav{
+      width: 100%;
+      min-width: 320px; /*dimension mas chicha en los celulares*/
+      height: 60px;
+      display: flex;
+      justify-content: space-between;
+      align-content: center;
+      padding: 0px 35px 0px 35px;
+      position: fixed;
+      top: 0;
+      z-index: 100;
+      background-color: var(--color-nav);
+  }
+  
+  .nav-container__logo{
+      margin-left: 7%;
+      width: 140px;
+      height: 65px;
+  }
+  
+  .imgLogo{
+      object-fit: cover;
+      width: 166px;
+      height: 57px;
+  }
+  
+  .nav-container__options{
+      display: flex;
+      align-items: center;
+      margin-right: 131px;
+  }
+  
+  .nav-container__options a{
+      font-size: 1.1rem;
+      font-weight: bolder;
+      text-decoration: none;
+      color: var(--just-white);
+      margin-left: 10px;
+  }
+  
+
+  .header-container{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+    
+  }
+  .header-container__image img{
+    width: 512px;
+    height: 350px;
+    border-radius: 16px;
+    margin: 0px 77px 0px 39px;
+    }
+
+  .cardHeader-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 448px;
+    height: 172px;
+    background-color: rgba(0, 0, 0,0.75);
+    border-radius: 27px;
+    color: var(--color-secondary);
+    justify-content: center;
+    margin: 40px 0px 0px 35px;
+  }
+
+  
+  .cardHeader-container h1{
+      color: var(--just-white);
+      font-size: 3.0rem;
+      text-align: center;
+      font-weight: bolder;
+    }
+    
+    .cardHeader-container p{
+        color: var(--just-white);
+        padding: 5px 10px 5px 10px;
+        text-align: center;
+        font-size: 1.2rem;
+        font-weight: lighter;
+    }
+    
+    
+  
+  .cardHeader-container__button{
+    width: 70%;
+    display: flex;
+    justify-content: center;
+    margin-top: 33px;
+  }
+  
+  .cardHeader-container a{
+      width: 129px;
+      height: 43px;
+      border-radius: 10px;
+      border: 1px solid var(--color-primary);
+      text-decoration: none;
+      color: var(--just-white);
+      background-color: #47464686;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+      box-shadow: 0px 1px 8px var(--just-white);
+  }
+
+  .cardHeader-container a:hover{
+        background-color: var(--color-primary);
+        color: var(--color-nav);
+        border: 1px solid var(--color-secondary);
+        box-shadow: 0px 4px 20px var(--just-white);
+
+  }
+  
+  .footerHead{
+      color: #000;
+      display: flex;
+      justify-content: center;
+      font-weight: bold;
+      font-size: 1.2rem;
+      margin-top: 104px;
+  }
+
+  /*---------fondos--------------*/
+
+  .card-container{
+    display: flex;
+    width: 911px;
+    height: auto;
+    background-color: var(--just-white);
+    flex-direction: column;
+    align-items: center;
+    margin: 100px auto 80px auto;
+    box-shadow: 0px 4px 20px #0a0a0a93;
+    border-radius: 18px;
+}
+.card-container:hover{
+    box-shadow: 0px 4px 20px var(--color-primary);
+}
+
+.card-container h2{
+    font-size: 3.0rem;
+    margin: 50px 0px 40px 0px;
+}
+
+.card-options{
+    display: flex;
+    justify-content: row;
+}
+
+.card-opctions__item{
+    width: 240px;
+    height: 400px;
+    text-align: center;
+    background-color: var(--color-secondary);
+    border-radius: 15px;
+    margin: 10px 35px 85px 0px;
+    padding: 25px;
+    position: relative;
+}
+.card-opctions__item:hover{
+    box-shadow: 0px 4px 12px var(--color-primary);
+}
+
+.card-opctions__item img{
+    width: 201px;
+    height: 123px;
+    object-fit: contain;
+}
+
+.card-opctions__item h3{
+    font-size: 1.5rem;
+    margin: 8px 0px
+}
+.card-opctions__item p{
+    font-weight: lighter;
+    font-size: 1.1rem;
+}
+
+.card-opctions__item a{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    width: 90px;
+    height: 30px;
+    margin: 0px auto 28px auto;
+    background-color: var(--color-primary);
+    border-radius: 10px;
+    text-decoration: none;
+    text-align: center;
+    padding: 5px;
+    color: var(--color-nav);
+}
+
+/*-------------testimonios-----------------*/
+
+/*---------como donar--*/
+
+.comoDonar-section{
+    margin-top: 90px;
+    text-align: center;
+}
+
+.comoDonar-section h2{
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+.comoDonar-section p{
+    margin-top: 10px;
+    font-size: 1.4rem;
+}
+
+.comoDonar-container{
+    width: 720px;
+    height: auto;
+    margin: 70px auto;
+    background-color: var(--just-white);
+    box-shadow: 0px 4px 20px #0a0a0a93;
+    border-radius: 18px;
+}
+
+.comoDonar-container:hover{
+        box-shadow: 0px 4px 20px var(--color-primary);
+    
+}
+.comoDonar-container__item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 1px #00000031;
+    height: 280px;
+}
+
+
+
+.comoDonar-container__body{
+    width: 500px;
+    padding: 15px;
+}
+.comoDonar-container__body h3{
+    font-size: 1.6rem;
+}
+.comoDonar-container__body p{
+    margin-top: 20px;
+    font-weight: lighter;
+    font-size: 1.2rem;
+}
+
+.comoDonar-container__item img{
+    width: 150px;
+    height: 150px;
+    display: block;
+
+}
+
+.comoDonar-container__footer{
+    width: 100%;
+    height: 110px;
+    background-color: var(--color-primary);
+    text-align: center;
+    padding: 18px;
+}
+
+
+/*--------footer-------------*/
+
+.footer-container{
+    display: flex ;
+    justify-content: center;
+}
+
+.footer-container__items{
+    text-align: left;
+    width: 320px;
+    height: auto;
+    line-height: 1.4rem;
+}
+
+.footer-container__items h3{
+    font-size: 1.4rem;
+    margin: 65px 0px 45px 1px;
+}
+
+.footer-container__article{
+    margin: 0px 0px 25px 0px;
+}
+
+.footer-container__article span{
+    font-weight: bolder;
+}
+
+.containerImages{
+    width: 200px;
+    height: 150px;
+    margin: 20px auto;
+    padding: 20px;
+}
+.containerImages img{
+    width: 50px;
+    height: 50px;
+}
+
+.containerLogo img{
+    width: 348px;
+}
