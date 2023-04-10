@@ -169,7 +169,7 @@
     display: flex;
     width: 911px;
     height: auto;
-    background-color: var(--just-white);
+    background-color: var(--purple);
     flex-direction: column;
     align-items: center;
     margin: 100px auto 80px auto;
