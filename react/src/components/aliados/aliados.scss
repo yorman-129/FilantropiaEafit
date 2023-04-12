@@ -1,0 +1,57 @@
+@import '../../styles/base';
+@import '../../styles/fonts';
+@import '../../styles/variables';
+
+
+.aliados-section{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background: linear-gradient(269.74deg, rgba(0, 172, 160, 0.45) 19.39%,
+    #F4FDFC 63.99%);
+    height: 450px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+    padding-top: 30px;
+}
+
+.aliados-section h2{
+    font-size: 3.0rem;
+    margin: 0px 0px 40px 0px;
+    padding-top: 50px;
+}
+
+@keyframes scroll{
+0%{
+    transform: translate(0);
+}
+100%{
+    transform: translate(calc(-250px * 10));
+}
+}
+
+.container-slider{
+    height: 100px;
+    margin: auto;
+    overflow: hidden;
+    position: relative;
+    width: auto;
+    margin-top: 88px;
+}
+
+.container-slider .slider-track{
+    animation: scroll 40s linear infinite;
+    display: flex;
+    width: calc(250*20);
+}
+
+.container-slider .slide{
+    height: 100px;
+    width: 250px;
+    margin: 10px 8px;
+    
+}
+.container-slider .slide img{
+    border-radius: 8px;
+    object-fit: contain;
+}
