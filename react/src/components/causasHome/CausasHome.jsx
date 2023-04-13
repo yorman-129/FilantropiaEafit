@@ -13,7 +13,8 @@ const CausasHome = ()=>{
             <div className="causas-section__items">
                 <div className="container-card">
                     <div className="container-card__img">
-                        <Imagenes token={"cienciatechinnova"}/>
+                    <Imagenes token={"equidadSocial"}/>
+                        
                     </div>
                     <h4>Equidad Social e inclusion</h4>
                     <p>Impactamos a través de becas y apoyos académicos</p>
@@ -21,7 +22,7 @@ const CausasHome = ()=>{
                 </div>
                 <div className="container-card">
                     <div className="container-card__img">
-                    <Imagenes token={"equidadSocial"}/>
+                    <Imagenes token={"cienciatechinnova"}/>
                     </div>
                     <h4>Ciencia, tecnologia e innovación</h4>
                     <p>Apalancamos proyectos de investigación para beneficio de la humanidad</p>

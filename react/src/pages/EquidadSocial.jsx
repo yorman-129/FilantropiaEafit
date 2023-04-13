@@ -1,12 +1,14 @@
 import React from 'react'
-import HeaderCausas from '../components/headerCausas/HeaderCausas';
 import ComoDonar from '../components/comodonar/ComoDonar';
 import Footer from '../components/footer/Footer';
+import FondosEquidadSocial from '../components/fondosEquidadSocial/FondosEquidadSocial';
+import HeaderCausasEquidadSocial from '../components/headerCausasEquidadSocial/HeaderCausasEquidadSocial';
 
 const EquidadSocial = ()=>{
     return(
         <>
-           <HeaderCausas/>
+           <HeaderCausasEquidadSocial/>
+           <FondosEquidadSocial/>
            <ComoDonar/>
            <Footer />
         </>

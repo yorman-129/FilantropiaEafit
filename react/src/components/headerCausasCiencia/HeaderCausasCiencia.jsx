@@ -1,10 +1,10 @@
 import React from 'react'
-import './headerCausas.scss';
+import './headerCausasCiencia.scss';
 import Imagenes from '../imagenes/Imagenes';
 
 
 
-const HeaderCausas = () => {
+const HeaderCausasCiencia = ( ) => {
     return (
         <>
 
@@ -16,23 +16,23 @@ const HeaderCausas = () => {
                             <Imagenes token={"logoFilantropia"} nameImg={"imgLogo"}/>
                         </div>
                         <div className="nav-container__options">
-                            <a href="./principal.html"> Inicio </a>
+                            <a href="./home"> Inicio </a>
                             <a href="#fondos"> Fondos </a>
                             <a href="#comoDonar"> ¿Como Donar? </a>
-                            <a href="#"> Acerca nosotros </a>
+                            <a href="#contactos"> Acerca nosotros </a>
                         </div>
                     </nav>
                 </div>
 
                 <div className="header-container">
                     <div className="cardHeader-container">
-                        <h1>Equidad social e inclusión</h1>
+                        <h1>Ciencia, tecnología e innovación</h1>
                         <div className="cardHeader-container__button">
                             <a href="./donaciones.html">Donar Aquí</a>
                         </div>
                     </div>
                     <div className="header-container__image">
-                        <Imagenes token={"equidadSocial"}/>
+                        <Imagenes token={"cienciatechinnova"}/>
                     </div>
                 </div>
             </header>
@@ -41,4 +41,4 @@ const HeaderCausas = () => {
     );
 }
 
-export default HeaderCausas;
+export default HeaderCausasCiencia;

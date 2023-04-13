@@ -9,16 +9,14 @@ header{
     min-width: 320px; /*dimension mas chicha en los celulares*/
     height: 550px;
     
-    & .imgHeaderHome{
-        width: inherit;
-        height: inherit;
-        background-size: cover;
-        position: absolute;
-        z-index: 1;
-        opacity: 0.74;
-    }
 } 
-
+.imgHeaderHome{
+    width: inherit;
+    height: inherit;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+}
 
 .nav-container{
     min-width: 320px;

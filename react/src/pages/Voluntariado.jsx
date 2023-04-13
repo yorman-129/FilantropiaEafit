@@ -1,12 +1,14 @@
 import React from 'react'
-import HeaderCausas from '../components/headerCausas/HeaderCausas';
+import HeaderCausasVoluntariado from '../components/headerCausasVoluntariado/HeaderCausasVoluntariado';
 import ComoDonar from '../components/comodonar/ComoDonar';
 import Footer from '../components/footer/Footer';
+import FondoVoluntariado from '../components/fondosVoluntariado/FondoVoluntariado';
 
 const Voluntariado = ()=>{
     return(
         <>
-        <HeaderCausas/>
+        <HeaderCausasVoluntariado/>
+        <FondoVoluntariado/>
         <ComoDonar/>
         <Footer />
      </>

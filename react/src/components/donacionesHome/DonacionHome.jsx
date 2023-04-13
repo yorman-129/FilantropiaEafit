@@ -17,7 +17,7 @@ const DonacionHome = () => {
 
                 <div className="card-container__video">
                     <iframe className="videoPrincipal" src="https://www.youtube.com/embed/716Kk9SKMpk"
-                        title="YouTube video player" frameborder="0"
+                        title="YouTube video player" frameborder="0" 
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen></iframe>
                 </div>

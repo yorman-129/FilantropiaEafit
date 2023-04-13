@@ -1,12 +1,14 @@
 import React from 'react'
-import HeaderCausas from '../components/headerCausas/HeaderCausas';
+import HeaderCausasTransformacion from '../components/headerCausasTransformacion/HeaderCausasTransformacion';
 import ComoDonar from '../components/comodonar/ComoDonar';
 import Footer from '../components/footer/Footer';
+import FondosTransformacionHumana from '../components/fondosTransformacionHumana/FondosTransformacionHumana';
 
 const TransformacionHumana = ()=>{
     return(
         <>
-        <HeaderCausas/>
+        <HeaderCausasTransformacion/>
+        <FondosTransformacionHumana/>
         <ComoDonar/>
         <Footer />
      </>

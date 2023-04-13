@@ -40,6 +40,9 @@ import wpp from '../../../public/assetsEafit/icons/footer/whatsapp.png';
 import youtube from '../../../public/assetsEafit/icons/footer/youtube.png';
 import logoFooter from '../../../public/assetsEafit/logoeafitfooter.png';
 import logoDonar from '../../../public/assetsEafit/logoDonacion.png';
+import fondoBecas from '../../../public/assetsEafit/imagen-fondo_de_becas.png';
+import fondeDeporte from '../../../public/assetsEafit/fondoDeporte.jpeg';
+import fondoCultura from '../../../public/assetsEafit/fondosCultura.jpeg';
 
 
 
@@ -85,6 +88,9 @@ const assets = {
   youtube,
   logoFooter,
   logoDonar,
+  fondoBecas,
+  fondeDeporte,
+  fondoCultura
 }
 
 const Imagenes = ({ token, nameImg }) => {
