@@ -1,5 +1,6 @@
 import React from 'react';
 import './donacionHome.scss'
+import Imagenes from '../imagenes/Imagenes';
 
 const DonacionHome = () => {
     return(
@@ -23,10 +24,7 @@ const DonacionHome = () => {
 
                 <div className="card-options">
                     <div className="card-opctions__item">
-                        <iframe src="./assetsEafit/icons/volunteer_activism_FILL0_wght400_GRAD0_opsz48.svg"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe>
+                        <Imagenes token={"logoDonar"}/>
                         <h3>Realizar Donación</h3>
                         <p>
                             Por medio de tú donación estas contribuyendo a una gran transformación de nuestra sociedad
@@ -34,10 +32,7 @@ const DonacionHome = () => {
                         <a href="./donaciones.html">Clic Aquí</a>
                     </div>
                     <div className="card-opctions__item">
-                        <iframe src="./assetsEafit/icons/workspace_premium_FILL0_wght400_GRAD0_opsz48.svg"
-                            frameborder="0"
-                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                            allowfullscreen></iframe>
+                        <Imagenes token={"logoDonar"}/>
                         <h3>Generar Certificado</h3>
                         <p>
                             Consulta y/o genera tú certificado

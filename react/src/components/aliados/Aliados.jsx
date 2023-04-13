@@ -1,99 +1,80 @@
 import React from "react";
+import Imagenes from "../imagenes/Imagenes";
 import './aliados.scss'
 
-const Aliados = ()=>{
-    return(
-          <>
-          <section className="aliados-section" id="aliados">
-            <div className="aliados-section__titulo">
-                <h2>Nuestros Principales Aliados</h2>
-            </div>
-            <div className="container-slider">
-                <div className="slider-track">
-                    <div className="slide">
-                        <img src="./assetsEafit/aliados/logos-aliados (1).png" alt="LogoAliado" height="100" width="250"
-                            />
-                    </div>
-                    <div className="slide">
-                        <img src="./assetsEafit/aliados/logos-aliados (2).png" alt="LogoAliado" height="100" width="250"
-                            />
-                    </div>
-                    <div className="slide">
-                        <img src="./assetsEafit/aliados/logos-aliados (3).png" alt="LogoAliado" height="100" width="250"
-                            />
-                    </div>
-                    <div className="slide">
-                        <img src="./assetsEafit/aliados/logos-aliados (4).png" alt="LogoAliado" height="100" width="250"
-                            />
-                    </div>
-                    <div className="slide">
-                        <img src="./assetsEafit/aliados/logos-aliados (5).png" alt="LogoAliado" height="100" width="250"
-                            />
-                    </div>
-                    <div className="slide">
-                        <img src="./assetsEafit/aliados/logos-aliados (6).png" alt="LogoAliado" height="100" width="250"
-                            />
-                    </div>
-                    <div className="slide">
-                        <img src="./assetsEafit/aliados/logos-aliados (7).png" alt="LogoAliado" height="100" width="250"
-                            />
-                    </div>
-                    <div className="slide">
-                        <img src="./assetsEafit/aliados/logos-aliados (8).png" alt="LogoAliado" height="100" width="250"
-                            />
-                    </div>
-                    <div className="slide">
-                        <img src="./assetsEafit/aliados/logos-aliados (9).png" alt="LogoAliado" height="100" width="250"
-                            />
-                    </div>
-                    <div className="slide">
-                        <img src="./assetsEafit/aliados/logos-aliados (10).png" alt="LogoAliado" height="100"
-                            width="250" />
-                    </div>
-                    <div className="slide">
-                        <img src="./assetsEafit/aliados/logos-aliados (11).png" alt="LogoAliado" height="100"
-                            width="250" />
-                    </div>
-                    <div className="slide">
-                        <img src="./assetsEafit/aliados/logos-aliados (12).png" alt="LogoAliado" height="100"
-                            width="250" />
-                    </div>
-                    <div className="slide">
-                        <img src="./assetsEafit/aliados/logos-aliados (13).png" alt="LogoAliado" height="100"
-                            width="250" />
-                    </div>
-                    <div className="slide">
-                        <img src="./assetsEafit/aliados/logos-aliados (14).png" alt="LogoAliado" height="100"
-                            width="250" />
-                    </div>
-                    <div className="slide">
-                        <img src="./assetsEafit/aliados/logos-aliados (15).png" alt="LogoAliado" height="100"
-                            width="250" />
-                    </div>
-                    <div className="slide">
-                        <img src="./assetsEafit/aliados/logos-aliados (16).png" alt="LogoAliado" height="100"
-                            width="250" />
-                    </div>
-                    <div className="slide">
-                        <img src="./assetsEafit/aliados/logos-aliados (17).png" alt="LogoAliado" height="100"
-                            width="250" />
-                    </div>
-                    <div className="slide">
-                        <img src="./assetsEafit/aliados/logos-aliados (18).png" alt="LogoAliado" height="100"
-                            width="250" />
-                    </div>
-                    <div className="slide">
-                        <img src="./assetsEafit/aliados/logos-aliados (19).png" alt="LogoAliado" height="100"
-                            width="250" />
-                    </div>
-                    <div className="slide">
-                        <img src="./assetsEafit/aliados/logos-aliados (20).png" alt="LogoAliado" height="100"
-                            width="250" />
+const Aliados = () => {
+    return (
+        <>
+            <section className="aliados-section" id="aliados">
+                <div className="aliados-section__titulo">
+                    <h2>Nuestros Principales Aliados</h2>
+                </div>
+                <div className="container-slider">
+                    <div className="slider-track">
+                        <div className="slide">
+                            <Imagenes token={"logoAliados1"} nameImg={"imgSlide"} />
+                        </div>
+                        <div className="slide">
+                            <Imagenes token={"logoAliados2"} nameImg={"imgSlide"} />
+                        </div>
+                        <div className="slide">
+                            <Imagenes token={"logoAliados3"} nameImg={"imgSlide"} />
+                        </div>
+                        <div className="slide">
+                            <Imagenes token={"logoAliados4"} nameImg={"imgSlide"} />
+                        </div>
+                        <div className="slide">
+                            <Imagenes token={"logoAliados5"} nameImg={"imgSlide"} />
+                        </div>
+                        <div className="slide">
+                            <Imagenes token={"logoAliados6"} nameImg={"imgSlide"} />
+                        </div>
+                        <div className="slide">
+                            <Imagenes token={"logoAliados7"} nameImg={"imgSlide"} />
+                        </div>
+                        <div className="slide">
+                            <Imagenes token={"logoAliados8"} nameImg={"imgSlide"} />
+                        </div>
+                        <div className="slide">
+                            <Imagenes token={"logoAliados9"} nameImg={"imgSlide"} />
+                        </div>
+                        <div className="slide">
+                            <Imagenes token={"logoAliados10"} nameImg={"imgSlide"} />
+                        </div>
+                        <div className="slide">
+                            <Imagenes token={"logoAliados11"} nameImg={"imgSlide"} />
+                        </div>
+                        <div className="slide">
+                            <Imagenes token={"logoAliados12"} nameImg={"imgSlide"} />
+                        </div>
+                        <div className="slide">
+                            <Imagenes token={"logoAliados13"} nameImg={"imgSlide"} />
+                        </div>
+                        <div className="slide">
+                            <Imagenes token={"logoAliados15"} nameImg={"imgSlide"} />
+                        </div>
+                        <div className="slide">
+                            <Imagenes token={"logoAliados16"} nameImg={"imgSlide"} />
+                        </div>
+                        <div className="slide">
+                            <Imagenes token={"logoAliados17"} nameImg={"imgSlide"} />
+                        </div>
+                        <div className="slide">
+                            <Imagenes token={"logoAliados19"} nameImg={"imgSlide"}/>
+                        </div>
+                        <div className="slide">
+                            <Imagenes token={"logoAliados20"} nameImg={"imgSlide"} />
+                        </div>
+                        <div className="slide">
+                            <Imagenes token={"logoAliados21"} nameImg={"imgSlide"} />
+                        </div>
+                        <div className="slide">
+                            <Imagenes token={"logoAliados22"} nameImg={"imgSlide"} />
+                        </div>
                     </div>
                 </div>
-            </div>
-        </section>
-          </>  
+            </section>
+        </>
     )
 }
 

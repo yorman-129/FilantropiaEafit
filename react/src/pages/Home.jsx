@@ -9,8 +9,8 @@ import Footer from '../components/footer/Footer'
 const Home = () => {
     return (
         <>
-            <HeaderHome/>
             <main>
+            <HeaderHome/>
             <DonacionHome/>
             <CausasHome/>
             <Aliados/>

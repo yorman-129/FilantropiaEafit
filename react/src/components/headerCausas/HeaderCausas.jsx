@@ -1,4 +1,7 @@
 import React from 'react'
+import './headerCausas.scss';
+import Imagenes from '../imagenes/Imagenes';
+
 
 
 const HeaderCausas = () => {
@@ -10,7 +13,7 @@ const HeaderCausas = () => {
                 <div className="nav-container">
                     <nav>
                         <div className="nav-container__logo">
-                            <img src="./assetsEafit/logoeafit.png" alt="Filantropia-Eafit" className="imgLogo" />
+                            <Imagenes token={"logoFilantropia"} nameImg={"imgLogo"}/>
                         </div>
                         <div className="nav-container__options">
                             <a href="./principal.html"> Inicio </a>
@@ -29,7 +32,7 @@ const HeaderCausas = () => {
                         </div>
                     </div>
                     <div className="header-container__image">
-                        <img src="./assetsEafit/equidadSocial.jpg" alt="Equidad social e inclusion" />
+                        <Imagenes token={"equidadSocial"}/>
                     </div>
                 </div>
             </header>

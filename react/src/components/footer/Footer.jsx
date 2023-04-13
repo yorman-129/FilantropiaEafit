@@ -1,4 +1,5 @@
 import React from "react";
+import Imagenes from "../imagenes/Imagenes";
 import './footer.scss';
 
 const Footer = ()=>{
@@ -89,15 +90,15 @@ const Footer = ()=>{
         <div className="footer-container__items">
             <h3>Nuestras redes sociales</h3>
             <div className="containerImages">
-                <img src="/public/assetsEafit/icons/footer/logotipo-de-instagram.png"   alt="Instagram"/>
-                <img src="/public/assetsEafit/icons/footer/facebook.png"   alt="facebook"/>
-                <img src="/public/assetsEafit/icons/footer/linkedin.png"   alt="linkedin"/>
-                <img src="/public/assetsEafit/icons/footer/correo.png"   alt="correo"/>
-                <img src="/public/assetsEafit/icons/footer/whatsapp.png"   alt="wpp"/>
-                <img src="/public/assetsEafit/icons/footer/youtube.png"   alt="youtube"/>
+                <Imagenes token={"instagram"}/>
+                <Imagenes token={"facebook"}/>
+                <Imagenes token={"linkedin"}/>
+                <Imagenes token={"correo"}/>
+                <Imagenes token={"wpp"}/>
+                <Imagenes token={"youtube"}/>
             </div>
             <div className="containerLogo">
-                <img src="./assetsEafit/logoNav.png" alt=""/>
+                <Imagenes token={"logoFooter"}/>
                 <article className="footer-container__article">
                     Universidad con Acreditación Institucional hasta 2026
                 </article>

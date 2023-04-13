@@ -1,10 +1,10 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from '../pages/Home';
-import Causas1 from '../pages/Causas1';
-import Causas2 from '../pages/Causas2';
-import Causas3 from '../pages/Causas3';
-import Causas4 from '../pages/Causas4';
+import EquidadSocial from '../pages/EquidadSocial';
+import CienciaTecnologia from '../pages/CienciaTecnologia';
+import TransformacionHumana from '../pages/TransformacionHumana';
+import Voluntariado from '../pages/Voluntariado';
 import Donacion from '../pages/Donacion';
 import NotFound from '../pages/NotFound';
 
@@ -15,10 +15,10 @@ const App = ()  => {
                     <Routes>
                         <Route  path="/" element={<Home/>} />
                         <Route  path="/home" element={<Home/>} />
-                        <Route  path="/causas" element={<Causas1/>} />
-                        <Route  path="/causas2" element={<Causas2/>} />
-                        <Route  path="/causas3" element={<Causas3/>} />
-                        <Route  path="/causas4" element={<Causas4/>} />
+                        <Route  path="/equidadSocial" element={<EquidadSocial/>} />
+                        <Route  path="/cienciaTecnologia" element={<CienciaTecnologia/>} />
+                        <Route  path="/transformacionHumana" element={<TransformacionHumana/>} />
+                        <Route  path="/voluntariado" element={<Voluntariado/>} />
                         <Route  path="/donacion" element={<Donacion/>} />
                         <Route  path="*" element={<NotFound/>}/>
                     </Routes>
