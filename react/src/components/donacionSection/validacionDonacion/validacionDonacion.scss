@@ -1,0 +1,109 @@
+@import '../../../styles/base';
+@import '../../../styles/fonts';
+@import '../../../styles/variables';
+
+
+
+  
+ 
+  .card-container{
+      display: flex;
+      width: 980px;
+      height: auto;
+      background-color: var(--just-white);
+      flex-direction: column;
+      align-items: center;
+      margin: 100px auto 80px auto;
+      box-shadow: 0px 4px 20px #0a0a0a93;
+      border-radius: 18px;
+  }
+  .card-container:hover{
+      box-shadow: 0px 4px 20px var(--color-primary);
+  }
+  
+  .card-container h2{
+      font-size: 3.0rem;
+      margin: 50px 0px 40px 0px;
+  }
+  
+  .card-container p{
+      text-align: center;
+      font-size: 1.4rem;
+  }
+
+  .card-container__navegacionDonar{
+    width: 720px;
+    box-shadow: 0px 4px 20px #0a0a0a93;
+    border-radius: 18px;
+    margin: 45px 0px 45px 0px;
+  }
+
+  .form-container{
+    width: 100%;
+    height: 390px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: var(--just-white2);
+    border: 0px solid var(--just-white2);
+    border-radius: 8px;
+    
+  }
+
+  .form-container header{
+    background-color: var(--color-primary);
+    width: 100%;
+    border: 0px solid var(--color-primary);
+    border-radius: 8px;
+    margin-bottom: 25px;
+  }
+
+  .form-container h3{
+    font-size: 1.8rem;
+    text-align: center;
+    padding: 10px;
+  }
+
+  .form-container main{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .item-main{
+    width: 250px;
+  }
+
+  .form-container label{
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .form-container .form-container__input{
+    width: 220px;
+    height: 25px;
+    border: 2px solid #eee;
+    border-radius: 5px;
+  }
+  
+  .form-container footer{
+    margin: 19px;
+  }
+
+  .form-container__inputButton{
+    width: 130px;
+    height: 40px;
+    font-size: 1.1rem;
+    border: 0px solid var(--color-nav);
+    border-radius: 8px;
+    color: var(--just-white);
+    background-color: var(--color-primary);
+    box-shadow: 1px 1px 5px var(--color-nav);
+  }
+  .form-container__inputButton:hover{
+    box-shadow: 10px 10px 20px var(--color-nav);
+    color: var(--color-nav);
+    background-color: var(--just-white2);
+
+  }
+  
+  
