@@ -16,10 +16,8 @@ const HeaderHome= () => {
                 <Imagenes token={"logoFilantropia"} nameImg={"imgLogo"}/>
                 </div>
                 <div className="nav-container__options">
-                    <a href="#"> Inicio </a>
+                    <a href="home"> Inicio </a>
                     <a href="#donaciones"> Haz tú donación </a>
-                    <a href="#causas"> Causas </a>
-                    <a href="#comoDonar"> ¿Como Donar? </a>
                     <a href="#"> Acerca nosotros </a>
                 </div>
             </nav>

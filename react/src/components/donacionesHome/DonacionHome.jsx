@@ -29,7 +29,7 @@ const DonacionHome = () => {
                         <p>
                             Por medio de tú donación estas contribuyendo a una gran transformación de nuestra sociedad
                         </p>
-                        <a href="./donaciones.html">Clic Aquí</a>
+                        <a href="./donacion">Clic Aquí</a>
                     </div>
                     <div className="card-opctions__item">
                         <Imagenes token={"logoDonar"}/>
@@ -38,7 +38,7 @@ const DonacionHome = () => {
                             Consulta y/o genera tú certificado
                         </p>
 
-                        <a href="./donaciones.html">Clic Aquí</a>
+                        <a href="./donacion">Clic Aquí</a>
 
                     </div>
                 </div>

@@ -28,7 +28,7 @@ const HeaderCausasEquidadSocial = ( ) => {
                     <div className="cardHeader-container">
                         <h1>Equidad social e inclusión</h1>
                         <div className="cardHeader-container__button">
-                            <a href="./donaciones.html">Donar Aquí</a>
+                            <a href="./donacion">Donar Aquí</a>
                         </div>
                     </div>
                     <div className="header-container__image">

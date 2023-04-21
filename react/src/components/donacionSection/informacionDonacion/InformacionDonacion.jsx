@@ -1,11 +1,49 @@
 import React from 'react'
+import {useState} from 'react'
 import './informacionDonacion.scss';
 
-const InformacionDonacion = () => {
+const InformacionDonacion = ({onFormSubmit}) => {
+
+    const [informacionDonacion, setInformacionDonacion] = useState(
+        {
+            fondoDonacion: '',
+            ValorDonar: '',
+            dondeNosConocio: '',
+            recurrencia: '',
+        }
+    )
+
+
+
+
+    const handleInputState = (e) => {
+        const namesKey = e.target.name;
+
+        setInformacionDonacion(
+            {
+                ...informacionDonacion,
+                [namesKey]: e.target.value
+            }
+        )
+    }
+
+    const handleForm = (e) => {
+        e.preventDefault();
+        const resultForm = {};
+
+        Array.from(e.target).forEach((element) => {
+            if (element.type !== "submit") {
+                resultForm[element.name] = element.value;
+            }
+        })
+        console.log("donacionInfo",resultForm);
+        onFormSubmit(informacionDonacion)
+
+    }
   return (
     <>
       <div className="card-container">
-      <form className="form-container" action="/" method="post" id="informacionDonacion">
+      <form className="form-container" action="/" method="post" id="informacionDonacion" onSubmit={handleForm}>
                         <header>
                             <h3>Información de la donación</h3>
                         </header>
@@ -14,34 +52,62 @@ const InformacionDonacion = () => {
 
                             <div className="item-main">
                                 <label for="name">Fondo a donar  </label>
-                                <input className="form-container__input" type="text" name="fondoDonacion" id="fondoDonacion"/>
+                                <select 
+                                className="form-container__input" 
+                                type="text" 
+                                name="fondoDonacion" 
+                                id="fondoDonacion"
+                                onChange={handleInputState}
+                                >
+
+                                    <option value="Cultura">Cultura</option>
+                                    <option value="Deporte">Deporte</option>
+                                    <option value="Fondo becas" selected>Fondo becas</option>
+                                    <option value="Fondo negocios internacioanles">Fondo negocios internacioanles</option>
+                            </select>
                             </div>
 
                             <div className="item-main">
                                 <label for="name">Valor a donar  </label>
-                                <input className="form-container__input" type="text" name="ValorDonar" id="ValorDonar"/>
+                                <input 
+                                className="form-container__input" 
+                                type="text" 
+                                name="ValorDonar" 
+                                id="ValorDonar"
+                                onChange={handleInputState}
+                                />
                             </div>
 
 
                             <div className="item-main">
                                 <label for="name">¿Donde conoció filantropia?  </label>
-                                <input className="form-container__input" type="text" name="dondeNosConocio"
-                                    id="dondeNosConocio"/>
+                                <input 
+                                className="form-container__input" 
+                                type="text" 
+                                name="dondeNosConocio"
+                                id="dondeNosConocio"
+                                onChange={handleInputState}
+                                />
                             </div>
 
                             <div className="item-main">
                                 <label for="name">Recurrencia  </label>
-                                <input className="form-container__input" type="text" name="recurrencia"
-                                    id="recurrencia"/>
+                                <input 
+                                className="form-container__input" 
+                                type="text" 
+                                name="recurrencia"
+                                id="recurrencia"
+                                onChange={handleInputState}
+                                />
                             </div>
-                            <div className="item-main">
-                                <p>formas de pago</p>
-                                <p>formas de pago</p>
-                                <p>formas de pago</p>
-                                <p>formas de pago</p>
-                                <p>formas de pago</p>
-                                <p>formas de pago</p>
-                            </div>
+                            <select className="item-main">
+                                <option>formas de pago</option>
+                                <option>formas de pago</option>
+                                <option>formas de pago</option>
+                                <option>formas de pago</option>
+                                <option>formas de pago</option>
+                                <option>formas de pago</option>
+                            </select>
 
                         </main>
                         <footer>

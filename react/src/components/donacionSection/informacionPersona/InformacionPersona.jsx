@@ -1,81 +1,178 @@
 import React from 'react';
+import { useState } from 'react';
 import './informacionPersona.scss';
 
 
-const InformacionPersona = () => {
-  return (
-    <>
-      <div className="card-container">
-      <form className="form-container" action="/" method="post" id="datosPersonales">
-                        <header>
-                            <h3>Datos Personales</h3>
-                        </header>
+const InformacionPersona = ({ onFormSubmit }) => {
 
-                        <main>
+    const [informacionPersona, setInformacionPersona] = useState(
+        {
+            nombres: 'Tu Nombre',
+            apellidos: 'Tu Apellido',
+            tipoDocumento: '',
+            documento: '',
+            genero: '',
+            celular: '',
+            correo: '',
+            fechaNacimiento: '',
+            departamento: '',
+            ciudad: '',
+            
+        }
+    )
 
-                            <div className="item-main">
-                                <label for="name">Nombres  </label>
-                                <input className="form-container__input" type="text" name="nombres" id="nombres"/>
-                            </div>
+    const handleInputState = (e) => {
+        const namesKey = e.target.name;
 
-                            <div className="item-main">
-                                <label for="name">Apellidos  </label>
-                                <input className="form-container__input" type="text" name="Apellidos" id="Apellidos"/>
-                            </div>
+        setInformacionPersona(
+            {
+                ...informacionPersona,
+                [namesKey]: e.target.value
+            }
+        )
+    }
+
+    const handleForm = (e) => {
+        e.preventDefault();
+        const resultForm = {};
+
+        Array.from(e.target).forEach((element) => {
+            if (element.type !== "submit") {
+                resultForm[element.name] = element.value;
+            }
+        })
+        console.log("donacion",resultForm);
+        onFormSubmit(informacionPersona);
+
+    }
+
+    return (
+        <>
+            <div className="card-container">
+                <form className="form-container" id="datosPersonales" onSubmit={handleForm} >
+
+                    <header>
+                        <h3>Datos Personales</h3>
+                    </header>
+
+                    <main>
 
 
-                            <div className="item-main">
-                                <label for="name">Tipo de documento  </label>
-                                <input className="form-container__input" type="text" name="tipoDocumento"
-                                    id="tipoDocumento"/>
-                            </div>
+                        <div className="item-main">
+                            <label htmlFor="nombres">Nombres  </label>
+                            <input
+                                className="form-container__input"
+                                type="text"
+                                name="nombres"
+                                id="nombres"
+                                placeholder={informacionPersona.nombres}
+                                onChange={handleInputState} />
+                        </div>
 
-                            <div className="item-main">
-                                <label for="name">Numero de documento  </label>
-                                <input className="form-container__input" type="text" name="numeroDocumento"
-                                    id="numeroDocumento"/>
-                            </div>
+                        <div className="item-main">
+                            <label htmlFor="Apellidos">Apellidos  </label>
+                            <input className="form-container__input"
+                                type="text"
+                                name="apellidos"
+                                id="Apellidos"
+                                onChange={handleInputState} />
+                        </div>
 
 
-                            <div className="item-main">
-                                <label for="name">Genero  </label>
-                                <input className="form-container__input" type="text" name="genero" id="genero"/>
-                            </div>
+                        <div className="item-main">
+                            <label htmlFor="tipoDocumento">Tipo de documento  </label>
+                            <select className="form-container__input"
+                                type="text"
+                                name="tipoDocumento"
+                                id="tipoDocumento"
+                                onChange={handleInputState}>
+                            <option value="Doumento identidad país origen" >Doumento identidad país origen</option>
+                            <option value="Doumento nacional identidad">Doumento nacional identidad</option>
+                            <option value="Cédula ciudadanía"selected>Cédula ciudadanía</option>
+                            <option value="Cédula extranjería">Cédula extranjería</option>
+                            <option value="Tarjeta de identidad">Tarjeta de identidad</option>
+                            <option value="NIT">NIT</option>
+                            <option value="Identificación nacional">Identificación nacional</option>
+                            <option value="Pasaporte">Pasaporte</option>
+                            </select>
+                        </div>
+                        {/*organizar a options*/}
+                        <div className="item-main">
+                            <label htmlFor="name">Numero de documento </label>
+                            <input className="form-container__input"
+                                type="text"
+                                name="documento"
+                                id="numeroDocumento"
+                                onChange={handleInputState} />
+                        </div>
 
-                            <div className="item-main">
-                                <label for="name">N° celular  </label>
-                                <input className="form-container__input" type="text" name="telefono" id="telefono"/>
-                            </div>
 
-                            <div className="item-main">
-                                <label for="name">Correo electronico  </label>
-                                <input className="form-container__input" type="email" name="email" id="email"/>
-                            </div>
+                        <div className="item-main">
+                            <label htmlFor="name">Genero  </label>
+                            <select className="form-container__input"
+                                type="text"
+                                name="genero"
+                                id="genero"
+                                onChange={handleInputState}>
 
-                            <div className="item-main">
-                                <label for="name">Fecha de nacimiento  </label>
-                                <input className="form-container__input" type="date" name="fechaNacimiento"
-                                    id="fechaNacimiento"/>
-                            </div>
+                                <option value="Masculino">Masculino</option>
+                                <option value="Femenino" selected>Femenino</option>
 
-                            <div className="item-main">
-                                <label for="name">Departamento residencia  </label>
-                                <input className="form-container__input" type="text" name="departamentoResidencia"
-                                    id="departamentoResidencia"/>
-                            </div>
-                            <div className="item-main">
-                                <label for="name">Ciudad de residencia  </label>
-                                <input className="form-container__input" type="text" name="ciudadResidencia"
-                                    id="ciudadResidencia"/>
-                            </div>
+                            </select>
+                        </div>
 
-                        </main>
-                        <footer>
-                            <input className="form-container__inputButton" type="submit" value="CONTINUAR"/>                        </footer>
-                    </form>
-                    </div>
-    </>
-  )
+                        <div className="item-main">
+                            <label htmlFor="name">N° celular  </label>
+                            <input className="form-container__input"
+                                type="text"
+                                name="celular"
+                                id="telefono"
+                                onChange={handleInputState} />
+                        </div>
+
+                        <div className="item-main">
+                            <label htmlFor="name">Correo electronico  </label>
+                            <input className="form-container__input"
+                                type="email"
+                                name="correo"
+                                id="email"
+                                onChange={handleInputState} />
+                        </div>
+
+                        <div className="item-main">
+                            <label htmlFor="name">Fecha de nacimiento  </label>
+                            <input className="form-container__input"
+                                type="date"
+                                name="fechaNacimiento"
+                                id="fechaNacimiento"
+                                onChange={handleInputState} />
+                        </div>
+
+                        <div className="item-main">
+                            <label htmlFor="name">Departamento residencia  </label>
+                            <input className="form-container__input"
+                                type="text"
+                                name="departamento"
+                                id="departamentoResidencia"
+                                onChange={handleInputState} />
+                        </div>
+                        <div className="item-main">
+                            <label htmlFor="name">Ciudad de residencia  </label>
+                            <input className="form-container__input"
+                                type="text"
+                                name="ciudad"
+                                id="ciudadResidencia"
+                                onChange={handleInputState} />
+                        </div>
+                    </main>
+                    <footer>
+                        <input className="form-container__inputButton" type="submit" value="CONTINUAR" />
+                    </footer>
+
+                </form>
+            </div>
+        </>
+    )
 }
 
 export default InformacionPersona

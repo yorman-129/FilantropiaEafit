@@ -43,7 +43,9 @@ import logoDonar from '../../../public/assetsEafit/logoDonacion.png';
 import fondoBecas from '../../../public/assetsEafit/imagen-fondo_de_becas.png';
 import fondeDeporte from '../../../public/assetsEafit/fondoDeporte.jpeg';
 import fondoCultura from '../../../public/assetsEafit/fondosCultura.jpeg';
-
+import pse from '../../../public/assetsEafit/pagos/pse.png';
+import creditCard from '../../../public/assetsEafit/pagos/credit_card.png';
+import acountCircle from '../../../public/assetsEafit/pagos/account_circle.png';
 
 
 const assets = {
@@ -90,7 +92,10 @@ const assets = {
   logoDonar,
   fondoBecas,
   fondeDeporte,
-  fondoCultura
+  fondoCultura,
+  pse,
+  creditCard,
+  acountCircle
 }
 
 const Imagenes = ({ token, nameImg }) => {
