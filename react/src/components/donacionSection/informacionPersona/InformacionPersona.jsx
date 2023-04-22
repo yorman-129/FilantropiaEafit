@@ -51,9 +51,9 @@ const InformacionPersona = ({ onFormSubmit }) => {
             <div className="card-container">
                 <form className="form-container" id="datosPersonales" onSubmit={handleForm} >
 
-                    <header>
+                    <div className='form-container__header'>
                         <h3>Datos Personales</h3>
-                    </header>
+                    </div>
 
                     <main>
 

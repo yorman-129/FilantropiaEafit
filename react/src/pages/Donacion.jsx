@@ -25,6 +25,10 @@ const Donacion = () => {
         dondeNosConocio: '',
         recurrencia: '',
         tipoPago: '',
+        tipoDePersona: '',
+        tipoBanco: '',
+        pais: '',
+        numeroCuenta: '',
     });
 
     useEffect(() => {
@@ -59,8 +63,11 @@ const Donacion = () => {
             });
         } else if (formularioActual == 3) {
             setDatosFormulario({
-                TarjetaCredito: data.TarjetaCredito,
-                cuentaDebito: data.cuentaDebito
+                ...datosFormulario,
+                tipoDePersona: data.tipoDePersona,
+                tipoBanco: data.tipoBanco,
+                pais: data.pais,
+                numeroCuenta: data.numeroCuenta,
             })
         }
 

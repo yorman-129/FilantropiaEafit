@@ -7,12 +7,16 @@ import OpcionesPago from './opcionesPago/OpcionesPago';
 
 
 
-const ValidacionDonacion = ({ onData,handleFormSubmit }) => {
+const ValidacionDonacion = ({ onData,onFormSubmit }) => {
   const [dataForm, setDataForm]=useState(0)
 
   const handleOpcion=(data)=>{
     console.log(data)
     setDataForm(data.tipoPago)
+  }
+  const handleValidacion=(data)=>{
+    console.log("validacion",data)
+    onFormSubmit(data);
   }
  
   return (
@@ -21,10 +25,10 @@ const ValidacionDonacion = ({ onData,handleFormSubmit }) => {
     dataForm == 0 && (<OpcionesPago datos={onData} onSubmit={handleOpcion}/>)
    }
    {
-    dataForm == 1 && (<PaymentCard/>)
+    dataForm == 1 && (<PaymentCard datos={onData} onSubmit={handleValidacion}/>)
    }
    {
-    dataForm == 2 && (<PaymentPSE/>)
+    dataForm == 2 && (<PaymentPSE datos={onData} onSubmit={handleValidacion}/>)
    }
    </>
   )

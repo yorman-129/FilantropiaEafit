@@ -44,9 +44,9 @@ const InformacionDonacion = ({onFormSubmit}) => {
     <>
       <div className="card-container">
       <form className="form-container" action="/" method="post" id="informacionDonacion" onSubmit={handleForm}>
-                        <header>
+                        <div className='form-container__header'>
                             <h3>Información de la donación</h3>
-                        </header>
+                        </div >
 
                         <main>
 
