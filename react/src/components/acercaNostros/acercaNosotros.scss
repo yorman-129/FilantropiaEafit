@@ -1,0 +1,69 @@
+@import '../../styles/base';
+@import '../../styles/fonts';
+@import '../../styles/variables';
+
+
+.acercaNosotros{
+    width: 950px;
+    height: 550px;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 70px auto 150px auto;
+}
+
+.tittleContacto{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 35px;
+
+     & h2{
+        font-size: 2.6rem;
+        margin-bottom: 10px;
+     }
+
+     & p{
+        font-size: 1.5rem;
+
+        & span{
+            text-decoration-style: solid;
+            color: var(--color-primary);
+            font-weight: bold;
+        }
+     }
+}
+
+.personaItem{
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    border: 2px solid var(--color-primary);
+    border-radius: 8px;
+    margin: 8px;
+    padding: 10px 0px;
+    box-shadow: 4px 4px 15px #161616;
+
+    & h3{
+        padding: 10px;
+    }
+
+    & p{
+        padding: 2px 0px 5px 0px;
+        color: #1f1e1e;
+    }
+
+    & a{
+        padding-bottom: 5px ;
+        color: var(--color-primary);
+        text-decoration: none;
+    }
+}
+
+.imgAcercaNosotros{
+    width: 130px;
+    height: 130px;
+}
+

@@ -1,0 +1,67 @@
+@import '../../styles/base';
+@import '../../styles/fonts';
+@import '../../styles/variables';
+
+
+.comoDonar-section{
+    margin-top: 90px;
+    text-align: center;
+}
+
+.comoDonar-section h2{
+    font-size: 3rem;
+    margin-bottom: 10px;
+}
+.comoDonar-section p{
+    margin-top: 10px;
+    font-size: 1.4rem;
+}
+
+.comoDonar-container{
+    width: 720px;
+    height: auto;
+    margin: 70px auto;
+    background-color: var(--just-white);
+    box-shadow: 0px 4px 20px #0a0a0a93;
+    border-radius: 18px;
+}
+
+.comoDonar-container:hover{
+        box-shadow: 0px 4px 20px var(--color-primary);
+    
+}
+.comoDonar-container__item{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 1px #00000031;
+    height: 280px;
+}
+
+.comoDonar-container__body{
+    width: 500px;
+    padding: 15px;
+}
+.comoDonar-container__body h3{
+    font-size: 1.6rem;
+}
+.comoDonar-container__body p{
+    margin-top: 20px;
+    font-weight: lighter;
+    font-size: 1.2rem;
+}
+
+.comoDonar-container__item img{
+    width: 150px;
+    height: 150px;
+    display: block;
+
+}
+
+.comoDonar-container__footer{
+    width: 100%;
+    height: 110px;
+    background-color: var(--color-primary);
+    text-align: center;
+    padding: 18px;
+}

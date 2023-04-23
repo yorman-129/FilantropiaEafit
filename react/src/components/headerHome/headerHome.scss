@@ -1,0 +1,137 @@
+@import '../../styles/base';
+@import '../../styles/fonts';
+@import '../../styles/variables';
+
+
+
+header{
+    width: 100%;
+    min-width: 320px; /*dimension mas chicha en los celulares*/
+    height: 550px;
+    
+} 
+.imgHeaderHome{
+    width: inherit;
+    height: inherit;
+    background-size: cover;
+    position: absolute;
+    z-index: 1;
+}
+
+.nav-container{
+    min-width: 320px;
+    height: 60px;
+}
+
+.nav-container nav{
+    width: 100%;
+    min-width: 320px; /*dimension mas chicha en los celulares*/
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding: 0px 35px 0px 35px;
+    position: fixed;
+    top: 0;
+    z-index: 100;
+    background-color: var(--color-nav);
+}
+
+.nav-container__logo{
+    margin-left: 7%;
+    width: 140px;
+    height: 65px;
+    z-index: 2;
+}
+
+.imgLogo{
+    object-fit: cover;
+    width: 166px;
+    height: 57px;
+}
+
+.nav-container__options{
+    display: flex;
+    align-items: center;
+    margin-right: 131px;
+}
+
+.nav-container__options a{
+    font-size: 1.1rem;
+    font-weight: bolder;
+    text-decoration: none;
+    color: var(--just-white);
+    margin-left: 10px;
+}
+
+.cardHeaderHome-container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 89px auto;
+    width: 411px;
+    height: 246px;
+    background-color: rgba(0, 0, 0,0.75);
+    border-radius: 27px;
+    color: var(--color-secondary);
+    position: relative;
+    z-index: 2;
+}
+
+.cardHeaderHome-container h1{
+    color: var(--just-white);
+    margin: 38px 0px 0px 0px;
+    font-size: 2.4rem;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.cardHeaderHome-container p{
+    color: var(--just-white);
+    padding: 5px 10px 5px 10px;
+    text-align: center;
+    font-size: 1.2rem;
+    font-weight: lighter;
+}
+
+.cardHeaderHome-container__button{
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 37px;
+    z-index: 3;
+}
+
+.cardHeaderHome-container a{
+    width: 129px;
+    height: 43px;
+    margin: 0px 10px 0px 10px;
+    border-radius: 10px;
+    text-decoration: none;
+    color: #000;
+    background-color: var(--color-primary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+
+.cardHeaderHome-container a:hover{
+    background-color: var(--color-primary);
+    color: var(--color-nav);
+    border: 1px solid var(--color-secondary);
+    box-shadow: 0px 4px 20px var(--just-white);
+
+}
+
+.footerHead{
+    color: #000;
+    display: flex;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 1.2rem;
+    margin-top: 104px;
+    position: relative;
+    z-index: 2;
+
+}
