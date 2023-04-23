@@ -79,7 +79,7 @@ const Donacion = () => {
     return (
         <>
             <HeaderDonacion />
-            <main>
+            <main id='donar'>
                 {
                     formularioActual === 1 && (<InformacionPersona onFormSubmit={handleFormSubmit} />)
                 }

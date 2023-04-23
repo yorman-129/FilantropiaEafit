@@ -3,15 +3,16 @@ import HeaderCausasVoluntariado from '../components/headerCausasVoluntariado/Hea
 import ComoDonar from '../components/comodonar/ComoDonar';
 import Footer from '../components/footer/Footer';
 import FondoVoluntariado from '../components/fondosVoluntariado/FondoVoluntariado';
-
-const Voluntariado = ()=>{
-    return(
+import BotonDonar from '../components/botonDonar/BotonDonar';
+const Voluntariado = () => {
+    return (
         <>
-        <HeaderCausasVoluntariado/>
-        <FondoVoluntariado/>
-        <ComoDonar/>
-        <Footer />
-     </>
+            <BotonDonar />
+            <HeaderCausasVoluntariado />
+            <FondoVoluntariado />
+            <ComoDonar />
+            <Footer />
+        </>
     )
 }
 

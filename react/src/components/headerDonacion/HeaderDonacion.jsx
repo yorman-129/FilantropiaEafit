@@ -2,7 +2,7 @@ import React from 'react'
 import './headerDonacion.scss'
 import Imagenes from "../imagenes/Imagenes";
 
-const HeaderHome= () => {
+const HeaderDonacion= () => {
   return (
     <>
     
@@ -24,11 +24,9 @@ const HeaderHome= () => {
         </div>
         
         <div className="cardHeaderHome-container">
-            <h1>FILANTROPÍA <br/><span>EAFIT</span></h1>
-            <p>Haz parte de esta comunidad uniéndote mediante donaciones en tiempo, talento o dinero.</p>
+            <h1>DONACIONES  <br/><span>FILANTROPÍA-EAFIT</span></h1>
             <div className="cardHeader-container__button">
-                <a href="#comoDonar">¿Como Donar?</a>
-                <a href="./donacion">Dona Aquí</a>
+                <a href="#donar">Dona Aquí</a>
             </div>
         </div>
         <p className="footerHead">
@@ -42,4 +40,4 @@ const HeaderHome= () => {
 }
 
 
-export default HeaderHome;
+export default HeaderDonacion;

@@ -100,14 +100,7 @@ const InformacionDonacion = ({onFormSubmit}) => {
                                 onChange={handleInputState}
                                 />
                             </div>
-                            <select className="item-main">
-                                <option>formas de pago</option>
-                                <option>formas de pago</option>
-                                <option>formas de pago</option>
-                                <option>formas de pago</option>
-                                <option>formas de pago</option>
-                                <option>formas de pago</option>
-                            </select>
+
 
                         </main>
                         <footer>

@@ -3,15 +3,16 @@ import HeaderCausasTransformacion from '../components/headerCausasTransformacion
 import ComoDonar from '../components/comodonar/ComoDonar';
 import Footer from '../components/footer/Footer';
 import FondosTransformacionHumana from '../components/fondosTransformacionHumana/FondosTransformacionHumana';
-
-const TransformacionHumana = ()=>{
-    return(
+import BotonDonar from '../components/botonDonar/BotonDonar';
+const TransformacionHumana = () => {
+    return (
         <>
-        <HeaderCausasTransformacion/>
-        <FondosTransformacionHumana/>
-        <ComoDonar/>
-        <Footer />
-     </>
+            <BotonDonar />
+            <HeaderCausasTransformacion />
+            <FondosTransformacionHumana />
+            <ComoDonar />
+            <Footer />
+        </>
     )
 }
 

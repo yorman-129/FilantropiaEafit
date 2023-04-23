@@ -46,6 +46,12 @@ import fondoCultura from '../../../public/assetsEafit/fondosCultura.jpeg';
 import pse from '../../../public/assetsEafit/pagos/pse.png';
 import creditCard from '../../../public/assetsEafit/pagos/credit_card.png';
 import acountCircle from '../../../public/assetsEafit/pagos/account_circle.png';
+import LizyennyOsorio from '../../../public/assetsEafit/acercaNostros/LizyennyOsorio.png';
+import LuzAdrianaYepes from '../../../public/assetsEafit/acercaNostros/LuzAdrianaYepes.png';
+import MarcelaBuilesToro from '../../../public/assetsEafit/acercaNostros/MarcelaBuilesToro.png';
+import MariaClaraCeballos from '../../../public/assetsEafit/acercaNostros/MariaClaraCeballos.png';
+import MariaCristinaMontoya from '../../../public/assetsEafit/acercaNostros/MariaCristinaMontoya.png';
+import NuryAndreaSepulveda from '../../../public/assetsEafit/acercaNostros/NuryAndreaSepulveda.png';
 
 
 const assets = {
@@ -95,7 +101,13 @@ const assets = {
   fondoCultura,
   pse,
   creditCard,
-  acountCircle
+  acountCircle,
+  LizyennyOsorio,
+  LuzAdrianaYepes,
+  MarcelaBuilesToro,
+  MariaClaraCeballos,
+  MariaCristinaMontoya,
+  NuryAndreaSepulveda,
 }
 
 const Imagenes = ({ token, nameImg }) => {

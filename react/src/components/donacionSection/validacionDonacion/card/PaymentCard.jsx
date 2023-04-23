@@ -47,7 +47,7 @@ const PaymentCard = ({ datos, onSubmit }) => {
             </p>
           </div>
           <form action="" onSubmit={handleForm} className='formCard'>
-            <p className='cCuenta'>Credito / Debito / Tarjeta de prepago</p>
+            <p className='cCuenta'>Tarjeta Credito - Debito - Prepago</p>
 
             <div className="card-information">
 
