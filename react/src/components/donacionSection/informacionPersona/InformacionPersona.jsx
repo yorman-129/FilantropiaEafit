@@ -48,20 +48,20 @@ const InformacionPersona = ({ onFormSubmit }) => {
 
     return (
         <>
-            <div className="card-container">
-                <form className="form-container" id="datosPersonales" onSubmit={handleForm} >
+            <div className="card-containerInfo">
+                <form className="form-containerInfo" id="datosPersonales" onSubmit={handleForm} >
 
-                    <div className='form-container__header'>
+                    <div className='form-containerInfo__header'>
                         <h3>Datos Personales</h3>
                     </div>
 
-                    <main>
+                    <main className='mainContainer'>
 
 
                         <div className="item-main">
                             <label htmlFor="nombres">Nombres  </label>
                             <input
-                                className="form-container__input"
+                                className="form-containerInfo__input"
                                 type="text"
                                 name="nombres"
                                 id="nombres"
@@ -71,7 +71,7 @@ const InformacionPersona = ({ onFormSubmit }) => {
 
                         <div className="item-main">
                             <label htmlFor="Apellidos">Apellidos  </label>
-                            <input className="form-container__input"
+                            <input className="form-containerInfo__input"
                                 type="text"
                                 name="apellidos"
                                 id="Apellidos"
@@ -81,7 +81,7 @@ const InformacionPersona = ({ onFormSubmit }) => {
 
                         <div className="item-main">
                             <label htmlFor="tipoDocumento">Tipo de documento  </label>
-                            <select className="form-container__input"
+                            <select className="form-containerInfo__input"
                                 type="text"
                                 name="tipoDocumento"
                                 id="tipoDocumento"
@@ -99,7 +99,7 @@ const InformacionPersona = ({ onFormSubmit }) => {
                         {/*organizar a options*/}
                         <div className="item-main">
                             <label htmlFor="name">Numero de documento </label>
-                            <input className="form-container__input"
+                            <input className="form-containerInfo__input"
                                 type="text"
                                 name="documento"
                                 id="numeroDocumento"
@@ -109,7 +109,7 @@ const InformacionPersona = ({ onFormSubmit }) => {
 
                         <div className="item-main">
                             <label htmlFor="name">Genero  </label>
-                            <select className="form-container__input"
+                            <select className="form-containerInfo__input"
                                 type="text"
                                 name="genero"
                                 id="genero"
@@ -123,7 +123,7 @@ const InformacionPersona = ({ onFormSubmit }) => {
 
                         <div className="item-main">
                             <label htmlFor="name">N° celular  </label>
-                            <input className="form-container__input"
+                            <input className="form-containerInfo__input"
                                 type="text"
                                 name="celular"
                                 id="telefono"
@@ -132,7 +132,7 @@ const InformacionPersona = ({ onFormSubmit }) => {
 
                         <div className="item-main">
                             <label htmlFor="name">Correo electronico  </label>
-                            <input className="form-container__input"
+                            <input className="form-containerInfo__input"
                                 type="email"
                                 name="correo"
                                 id="email"
@@ -141,7 +141,7 @@ const InformacionPersona = ({ onFormSubmit }) => {
 
                         <div className="item-main">
                             <label htmlFor="name">Fecha de nacimiento  </label>
-                            <input className="form-container__input"
+                            <input className="form-containerInfo__input"
                                 type="date"
                                 name="fechaNacimiento"
                                 id="fechaNacimiento"
@@ -150,7 +150,7 @@ const InformacionPersona = ({ onFormSubmit }) => {
 
                         <div className="item-main">
                             <label htmlFor="name">Departamento residencia  </label>
-                            <input className="form-container__input"
+                            <input className="form-containerInfo__input"
                                 type="text"
                                 name="departamento"
                                 id="departamentoResidencia"
@@ -158,7 +158,7 @@ const InformacionPersona = ({ onFormSubmit }) => {
                         </div>
                         <div className="item-main">
                             <label htmlFor="name">Ciudad de residencia  </label>
-                            <input className="form-container__input"
+                            <input className="form-containerInfo__input"
                                 type="text"
                                 name="ciudad"
                                 id="ciudadResidencia"
@@ -166,7 +166,7 @@ const InformacionPersona = ({ onFormSubmit }) => {
                         </div>
                     </main>
                     <footer>
-                        <input className="form-container__inputButton" type="submit" value="CONTINUAR" />
+                        <input className="form-containerInfo__inputButton" type="submit" value="CONTINUAR" />
                     </footer>
 
                 </form>

@@ -1,0 +1,173 @@
+@import "../../../../styles/base";
+@import "../../../../styles/fonts";
+@import "../../../../styles/variables";
+
+.logofilantropia {
+    width: 200px;
+}
+
+.formCard .cCuenta {
+    font-size: 1.8rem;
+    font-weight: bold;
+    margin: 10px;
+    text-align: center;
+}
+.section-containerCard {
+    display: flex;
+    background: #fff;
+}
+
+.container-cardPSE__cuenta {
+    display: flex;
+    margin: 25px 0px 25px 0px;
+}
+.container-cardPSE__cuenta p{
+    padding: 2px;
+    font-weight: bolder;
+}
+.card-information p {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 20px 0px 10px 0px;
+}
+.data-user p {
+    font-size: 1.3rem;
+    font-weight: bold;
+    margin: 20px 0px 10px 0px;
+}
+
+.cardPayment {
+    width: 75%;
+    margin-left: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.container-cardPayment {
+    display: flex;
+    width: 920px;
+    height: auto;
+    background-color: var(--just-white);
+    flex-direction: column;
+    align-items: center;
+    margin: 100px 70px 80px 70px;
+    box-shadow: 0px 4px 20px #0a0a0a93;
+    border-radius: 18px;
+}
+
+
+.container-information {
+    display: flex;
+}
+.container-information .inputCard {
+    width: 220px;
+    height: 29px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    background: #a1a0a0e3;
+    margin-bottom: 10px;
+}
+.container-information .inputCardOnly {
+    width: 100%;
+    height: 29px;
+    border: 1px solid #eee;
+    border-radius: 5px;
+    background: #a1a0a0e3;
+    margin-bottom: 10px;
+}
+
+
+.containerSubmit {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0px 20px 0px;
+}
+.containerSubmit .inputCardButton {
+    background-color: var(--color-primary);
+    height: 30px;
+    border: 1px solid #eeeeee1f;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0px 4px 20px #3d4c4d;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.container-aside {
+    background: var(--color-primary);
+    width: 920px;
+    color: var(--just-white);
+    padding-top: 50px;
+}
+
+.container-aside__totalPago {
+    padding: 10px;
+    margin: 40px 15px 20px 0px;
+    border-bottom: 0.5px solid #eeeeee3b;
+
+    & p {
+        font-size: 1.2rem;
+    }
+    & h3 {
+        font-weight: bolder;
+        font-size: 1.9rem;
+    }
+
+    & span {
+        font-size: 15px;
+    }
+}
+
+.container-aside__detallesPago {
+    padding: 10px;
+    margin: 50px 15px 20px 0px;
+    border-bottom: 0.5px solid #eeeeee3b;
+
+    & p {
+        font-size: 1.2rem;
+        margin-bottom: 10px;
+    }
+    & h3 {
+        font-weight: bolder;
+        font-size: 1.4rem;
+        margin-bottom: 19px;
+    }
+
+    & span {
+        font-size: 15px;
+    }
+}
+
+.container-aside__footer {
+    padding: 10px;
+    margin: 100px 15px 20px 0px;
+
+    & p {
+        font-size: 1.2rem;
+    }
+    & h3 {
+        font-weight: bolder;
+        font-size: 1.4rem;
+    }
+
+    & span {
+        font-size: 15px;
+    }
+}
