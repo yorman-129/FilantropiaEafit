@@ -19,7 +19,6 @@ const HeaderHome= () => {
                     <a href="#"> Inicio </a>
                     <a href="#donaciones"> Haz tú donación </a>
                     <a href="#causas"> Causas </a>
-                    <a href="#comoDonar"> ¿Como Donar? </a>
                     <a href="#"> Acerca nosotros </a>
                 </div>
             </nav>
@@ -33,10 +32,13 @@ const HeaderHome= () => {
                 <a href="./donacion">Dona Aquí</a>
             </div>
         </div>
+        
         <p className="footerHead">
             Aquí es donde se cultiva la transformación social por medio de iniciativas filantrópicas, para contribuir al
             desarrollo de la sociedad
         </p>
+     
+        
     </header>
 
     </>

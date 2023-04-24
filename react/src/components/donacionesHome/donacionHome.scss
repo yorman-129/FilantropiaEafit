@@ -1,8 +1,8 @@
-@import '../../styles/base';
-@import '../../styles/fonts';
-@import '../../styles/variables';
+@import "../../styles/base";
+@import "../../styles/fonts";
+@import "../../styles/variables";
 
-.card-container{
+.card-containerHome {
     display: flex;
     width: 911px;
     height: auto;
@@ -12,75 +12,95 @@
     margin: 100px auto 80px auto;
     box-shadow: 0px 4px 20px #0a0a0a93;
     border-radius: 18px;
+
+ 
+        & h2 {
+            padding: 15px;
+            background-color: var(--color-primary);
+            width: 100%;
+            text-align: center;
+            font-size: 2.8rem;
+            border-radius: 18px 18px 0px 0px;
+            margin-bottom: 45px;
+        }
+    
+    & p {
+        text-align: center;
+        font-size: 1.4rem;
+    }
+
+    &__video {
+        margin: 35px 0px;
+    }
+    
 }
-.card-container:hover{
+.card-containerHome:hover {
     box-shadow: 0px 4px 20px var(--color-primary);
 }
 
-.card-container h2{
-    font-size: 3.0rem;
-    margin: 50px 0px 40px 0px;
-}
-
-.card-container p{
-    text-align: center;
-    font-size: 1.4rem;
-}
-.card-container__video{
-    margin: 35px 0px;
-}
-.videoPrincipal{
+.videoPrincipal {
     padding: 10px;
     border-radius: 18px;
-    width:560px;
-    height:315px;
+    width: 560px;
+    height: 315px;
 }
 
-.card-options{
+.card-options {
     display: flex;
     justify-content: row;
 }
 
-.card-opctions__item{
+.card-opctions__itemHome {
     width: 240px;
-    height: 300px;
+    height: 340px;
     text-align: center;
     background-color: var(--color-secondary);
     border-radius: 15px;
     margin: 10px 35px 85px 0px;
-    padding: 25px;
+    padding: 15px;
     position: relative;
+    box-shadow: 0px 4px 12px #000;
 }
-.card-opctions__item:hover{
+.card-opctions__itemHome:hover {
     box-shadow: 0px 4px 12px var(--color-primary);
 }
 
-.card-opctions__item iframe{
+.card-opctions__itemHome iframe {
     width: 70px;
     height: 60px;
 }
 
-.card-opctions__item h3{
+.card-opctions__itemHome h3 {
     font-size: 1.5rem;
-    margin: 8px 0px
+    margin: 8px 0px;
 }
-.card-opctions__item p{
+.card-opctions__itemHome .pItemHome {
     font-weight: lighter;
-    font-size: 1.1rem;
 }
 
-.card-opctions__item a{
+.containerFooter{
+    height: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.containerFooter .Abutton {
     position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 90px;
-    height: 30px;
-    margin: 0px auto 28px auto;
+    width: 100px;
+    height: 40px;
     background-color: var(--color-primary);
     border-radius: 10px;
     text-decoration: none;
     text-align: center;
     padding: 5px;
     color: var(--color-nav);
+    padding-top: 10px;
+}
+.Abutton:hover {
+    box-shadow: 4px 4px 12px var(--color-primary);
+    background-color: rgba(218, 214, 214, 0.795);
+    color: black;
+    font-weight: bold;
 }

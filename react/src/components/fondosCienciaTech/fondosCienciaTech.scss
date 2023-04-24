@@ -21,20 +21,24 @@
 
 .card-container h2{
     font-size: 3.0rem;
-    margin: 50px 0px 40px 0px;
+    padding: 10px 0px 40px 0px;
 }
 
-.card-container a{
-    bottom: 0;
-    left: 0;
-    right: 0;
-    width: 90px;
-    height: 30px;
+.card-container .bottonFondos{
+    width: 120px;
+    height: 50px;
     margin: 25px auto 28px auto;
     background-color: var(--color-primary);
     border-radius: 10px;
     text-decoration: none;
     text-align: center;
-    padding: 5px;
-    color: var(--color-nav);
+    padding: 13px 0px;
+    color: black;
+    font-size: 1.2rem;
+    box-shadow: 0px 4px 20px black;
+
+}
+
+.card-container .pFondos{
+    padding: 0px 55px;
 }

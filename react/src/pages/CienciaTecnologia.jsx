@@ -4,6 +4,7 @@ import Footer from '../components/footer/Footer';
 import FondosCienciaTEch from '../components/fondosCienciaTech/FondosCienciaTEch';
 import HeaderCausasCiencia from '../components/headerCausasCiencia/HeaderCausasCiencia';
 import BotonDonar from '../components/botonDonar/BotonDonar';
+import AcercaNostros from '../components/acercaNostros/AcercaNosotros'
 
 
 const CienciaTecnologia = () => {
@@ -12,6 +13,7 @@ const CienciaTecnologia = () => {
             <BotonDonar />
             <HeaderCausasCiencia />
             <FondosCienciaTEch />
+            <AcercaNostros />
             <ComoDonar />
             <Footer />
         </>
