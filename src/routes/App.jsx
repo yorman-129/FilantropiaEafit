@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from '../pages/Home';
 import EquidadSocial from '../pages/EquidadSocial';
 import CienciaTecnologia from '../pages/CienciaTecnologia';
@@ -11,7 +11,7 @@ import NotFound from '../pages/NotFound';
 
 const App = ()  => {
         return (
-            <HashRouter >
+            <BrowserRouter basename="/FilantropiaEafit">
                     <Routes>
                         <Route  path="/" element={<Home/>} />
                         <Route  path="/home" element={<Home/>} />
@@ -22,7 +22,7 @@ const App = ()  => {
                         <Route  path="/donacion" element={<Donacion/>} />
                         <Route  path="*" element={<NotFound/>}/>
                     </Routes>
-            </HashRouter>
+            </BrowserRouter>
         );
 }
 
