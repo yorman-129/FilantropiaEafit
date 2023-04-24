@@ -1,14 +1,14 @@
 {
   "name": "FilantropiaEafit",
   "version": "1.0.0",
-  "description": "https://yorman-129.github.io/FilantropiaEafit/",
-  "homepage": "",
+  "description": "",
+  "homepage": "https://yorman-129.github.io/FilantropiaEafit/",
   "main": "src/index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "webpack serve --open",
     "build": "webpack --mode production",
-    "predeploy": "webpack --mode production",
+    "predeploy": "npm run build",
     "deploy": "gh-pages -d dist"
   },
   "keywords": [
@@ -22,7 +22,6 @@
     "@babel/preset-env": "^7.20.2",
     "@babel/preset-react": "^7.18.6",
     "babel-loader": "^9.1.2",
-    "gh-pages": "^5.0.0",
     "html-loader": "^4.2.0",
     "html-webpack-plugin": "^5.5.0",
     "react": "^18.2.0",
@@ -35,6 +34,7 @@
   "devDependencies": {
     "css-loader": "^6.7.3",
     "file-loader": "^6.2.0",
+    "gh-pages": "^5.0.0",
     "mini-css-extract-plugin": "^2.7.5",
     "sass": "^1.60.0",
     "sass-loader": "^13.2.2",

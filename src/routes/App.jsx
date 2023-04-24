@@ -11,7 +11,7 @@ import NotFound from '../pages/NotFound';
 
 const App = ()  => {
         return (
-            <BrowserRouter basename="/entregaFrontEndEafit">
+            <BrowserRouter basename="/FilantropiaEafit">
                     <Routes>
                         <Route  path="/" element={<Home/>} />
                         <Route  path="/home" element={<Home/>} />
