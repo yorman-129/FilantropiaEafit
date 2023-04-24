@@ -14,12 +14,12 @@ const App = ()  => {
             <createHashRouter basename="/FilantropiaEafit">
                     <Routes>
                         <Route  path="/" element={<Home/>} />
-                        <Route  path="#/home" element={<Home/>} />
-                        <Route  path="#/equidadSocial" element={<EquidadSocial/>} />
-                        <Route  path="#/cienciaTecnologia" element={<CienciaTecnologia/>} />
-                        <Route  path="#/transformacionHumana" element={<TransformacionHumana/>} />
-                        <Route  path="#/voluntariado" element={<Voluntariado/>} />
-                        <Route  path="#/donacion" element={<Donacion/>} />
+                        <Route  path="/#/home" element={<Home/>} />
+                        <Route  path="/#/equidadSocial" element={<EquidadSocial/>} />
+                        <Route  path="/#/cienciaTecnologia" element={<CienciaTecnologia/>} />
+                        <Route  path="/#/transformacionHumana" element={<TransformacionHumana/>} />
+                        <Route  path="/#/voluntariado" element={<Voluntariado/>} />
+                        <Route  path="/#/donacion" element={<Donacion/>} />
                         <Route  path="*" element={<NotFound/>}/>
                     </Routes>
             </createHashRouter>
