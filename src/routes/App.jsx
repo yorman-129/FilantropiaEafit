@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom'
 import Home from '../pages/Home';
 import EquidadSocial from '../pages/EquidadSocial';
 import CienciaTecnologia from '../pages/CienciaTecnologia';
@@ -11,18 +11,18 @@ import NotFound from '../pages/NotFound';
 
 const App = ()  => {
         return (
-            <BrowserRouter basename="/FilantropiaEafit">
+            <Router basename="/FilantropiaEafit">
                     <Routes>
-                        <Route  path="/" element={<Home/>} />
-                        <Route  path="/home" element={<Home/>} />
-                        <Route  path="/equidadSocial" element={<EquidadSocial/>} />
-                        <Route  path="/cienciaTecnologia" element={<CienciaTecnologia/>} />
-                        <Route  path="/transformacionHumana" element={<TransformacionHumana/>} />
-                        <Route  path="/voluntariado" element={<Voluntariado/>} />
-                        <Route  exact path="/donacion" element={<Donacion/>} />
-                        <Route  path="*" element={<NotFound/>}/>
+                        <Route  exact path="#/" element={<Home/>} />
+                        <Route  exact path="#/home" element={<Home/>} />
+                        <Route  exact path="#/equidadSocial" element={<EquidadSocial/>} />
+                        <Route  exact path="#/cienciaTecnologia" element={<CienciaTecnologia/>} />
+                        <Route  exact path="#/transformacionHumana" element={<TransformacionHumana/>} />
+                        <Route  exact path="#/voluntariado" element={<Voluntariado/>} />
+                        <Route  exact path="#/donacion" element={<Donacion/>} />
+                        <Route  exact path="*" element={<NotFound/>}/>
                     </Routes>
-            </BrowserRouter>
+            </Router>
         );
 }
 
