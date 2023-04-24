@@ -19,7 +19,7 @@ const App = ()  => {
                         <Route  exact path="/cienciaTecnologia" element={<CienciaTecnologia/>} />
                         <Route  exact path="/transformacionHumana" element={<TransformacionHumana/>} />
                         <Route  exact path="/voluntariado" element={<Voluntariado/>} />
-                        <Link to='/donacion'/>
+                        <Link to='/#/donacion'/>
                         
                         <Route  exact path="*" element={<NotFound/>}/>
                     </Routes>
