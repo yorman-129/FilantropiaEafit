@@ -1,0 +1,29 @@
+@import '../../styles/base';
+@import '../../styles/fonts';
+@import '../../styles/variables';
+
+h2{
+    margin: 10px 0px 20px 0px;
+  }
+
+  label{
+    margin-bottom: 15px;
+  }
+  .inputSolicitud{
+    margin-bottom: 10px;
+  }
+  .enviarSolicitud {
+    width: 100%;
+    width: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .enviarSolicitud input{
+    height: 36px;
+    font-size: 1.1rem;
+    padding: 5px;
+    background-color: var(--color-primary);
+    border: 1px solid #ece;
+    border-radius: 8px;
+  }

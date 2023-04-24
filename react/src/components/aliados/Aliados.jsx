@@ -2,7 +2,7 @@ import React from "react";
 import Imagenes from "../imagenes/Imagenes";
 import './aliados.scss'
 
-const Aliados = () => {
+const Aliados = () => { 
     return (
         <>
             <section className="aliados-section" id="aliados">
