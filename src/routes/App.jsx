@@ -1,5 +1,5 @@
 import React from 'react';
-import { HashRouter , Routes, Route } from 'react-router-dom'
+import { HashRouter , Routes, Route, Link } from 'react-router-dom'
 import Home from '../pages/Home';
 import EquidadSocial from '../pages/EquidadSocial';
 import CienciaTecnologia from '../pages/CienciaTecnologia';
@@ -19,7 +19,8 @@ const App = ()  => {
                         <Route  exact path="/cienciaTecnologia" element={<CienciaTecnologia/>} />
                         <Route  exact path="/transformacionHumana" element={<TransformacionHumana/>} />
                         <Route  exact path="/voluntariado" element={<Voluntariado/>} />
-                        <Route  exact path="/donacion" element={<Donacion/>} />
+                        <Link to='/donacion'/>
+                        
                         <Route  exact path="*" element={<NotFound/>}/>
                     </Routes>
             </HashRouter>
