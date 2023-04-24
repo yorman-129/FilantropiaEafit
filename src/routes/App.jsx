@@ -19,7 +19,7 @@ const App = ()  => {
                         <Route  path="/cienciaTecnologia" element={<CienciaTecnologia/>} />
                         <Route  path="/transformacionHumana" element={<TransformacionHumana/>} />
                         <Route  path="/voluntariado" element={<Voluntariado/>} />
-                        <Route  path="/donacion" element={<Donacion/>} />
+                        <Route  exact path="/donacion" element={<Donacion/>} />
                         <Route  path="*" element={<NotFound/>}/>
                     </Routes>
             </BrowserRouter>
