@@ -29,7 +29,7 @@ const HeaderHome= () => {
             <p>Haz parte de esta comunidad uniéndote mediante donaciones en tiempo, talento o dinero.</p>
             <div className="cardHeader-container__button">
                 <a href="#comoDonar">¿Como Donar?</a>
-                <a href="./donacion">Dona Aquí</a>
+                <a href="FilantropiaEafit/donacion">Dona Aquí</a>
             </div>
         </div>
         
